@@ -1,11 +1,26 @@
+@import "./variables.scss";
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0px 15px 0px 10px;
 
-  .logo img {
-    height: 45px;
-    width: 65px;
+  .logo {
+
+    img {
+    width: 10%;;
     margin: 0;
+    padding: 15px;
+    }
+  }
+
+  .navLinks{
+     a{
+      text-decoration: none;
+      font-family: $title-font;
+      padding: 0px 10px;
+     }
   }
 }
 
