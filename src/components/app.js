@@ -22,22 +22,16 @@ export default class App extends Component {
       <div className='app'>
 
 
-        <Home/>
-      
-
-        <Account />
-
-        <CheckoutPage />
-
-
 
         <Router>
           <div>
           <NavBar />
            <Switch>   
-              <Route path="/" component={Home} />
+              <Route exact path="/" component={Home} />
               <Route path="/account" component={Account} />
               <Route path="/auth" component={Auth} />
+              <Route path="/checkout" component={CheckoutPage} />
+
             </Switch>
           </div>
         </Router>
