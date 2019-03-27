@@ -26,3 +26,22 @@ body {
     display: grid;
     justify-items: center;
 }
+
+.home-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .home-logo {
+        
+    }
+
+    .home-login {
+        
+    }
+}
+
+.home-middle {
+    margin-bottom: 50px;
+}
