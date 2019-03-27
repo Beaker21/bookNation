@@ -5,7 +5,9 @@ import logoMain from "../../static/assets/images/logo-main.png";
 
 const NavBar = () => {
     return (
-        <div className='navbar'>
+
+            
+      <div className='navbar'>
             <div className="logo">
                 <img src={logoMain}/>
             </div>
@@ -13,7 +15,9 @@ const NavBar = () => {
                 <NavLink exact to="/">Home</NavLink>
                 <NavLink to="/account">Account</NavLink>
                 <NavLink to="/auth">Auth</NavLink>
+                <NavLink to="/cart">Cart</NavLink>
             </div>
+
         </div>
 
     )
