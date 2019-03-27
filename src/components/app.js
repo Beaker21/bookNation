@@ -14,9 +14,6 @@ import BookGrid from "./grid";
 import CheckoutPage from './checkout';
 import Cart from './cart';
 
-
-
-
 export default class App extends Component {
   render() {
     return (
