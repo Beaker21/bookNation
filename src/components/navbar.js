@@ -7,6 +7,7 @@ const NavBar = () => {
             <NavLink exact to="/">Home</NavLink>
             <NavLink to="/account">Account</NavLink>
             <NavLink to="/auth">Auth</NavLink>
+            <NavLink to="/cart">Cart</NavLink>
         </div>
 
     )
