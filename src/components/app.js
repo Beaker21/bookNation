@@ -10,10 +10,16 @@ import Home from "./home";
 import NavBar from "./navbar";
 import Auth from "./authentication/auth";
 
+import Auth from './authentication/auth'
+
+import BookGrid from "./grid"
+
+
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
+
         <Router>
           <div>
           <NavBar />
@@ -24,6 +30,7 @@ export default class App extends Component {
             </Switch>
           </div>
         </Router>
+
       </div>
     );
   }
