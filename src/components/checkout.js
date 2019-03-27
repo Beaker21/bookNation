@@ -41,11 +41,18 @@ const Checkout = (props) => (
      <h3 className="heading-3">Checkout</h3>
      <Input label="Full Name" type="text" name="full_name" />
      <Input label="Email" type="text" name="email" />
-     <Input label="Address Line 1" type="text" name="address_line_1" />
-     <Input label="Address Line 2" type="text" name="address_line_2" />
-     <Input label="City" type="text" name="city" />
-     <Input label="State" type="text" name="state" />
-     <Input label="Postal Code" type="text" name="postal_code" />
+     <Input label="Address" type="text" name="address" />
+      <div className="row">
+        <div className="col">
+          <Input label="City" type="text" name="city" />
+        </div>
+        <div className="col">
+          <Input label="State" type="text" name="state" />
+        </div>
+        <div className="col">
+          <Input label="Postal Code" type="text" name="postal_code" />
+        </div>
+      </div>
      <br/>
      <Input label="Card Number" type="number" name="card_number" imgSrc="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" />
       <div className="row">
