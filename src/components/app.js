@@ -12,6 +12,7 @@ import NavBar from "./navbar";
 import Auth from "./authentication/auth";
 import BookGrid from "./grid";
 import CheckoutPage from './checkout';
+import AddBookForm from './admin/add-book-form';
 
 
 
@@ -28,6 +29,7 @@ export default class App extends Component {
         <Account />
 
         <CheckoutPage />
+        <AddBookForm />
 
 
 

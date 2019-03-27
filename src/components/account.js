@@ -12,7 +12,7 @@ export default class Account extends Component {
         return (
             <div className="account-page-wrapper">
 
-                <div className="account-details-wrapper">
+                <div>
                     <div>
                         <h1>This is the Account Page</h1>
                     </div>
@@ -36,10 +36,10 @@ export default class Account extends Component {
                             Cost:
                         </div>
                     </div>
-                    <div>
+                    <div className="btn">
                         <button>Update Account</button>
                     </div>
-                    <div>
+                    <div className="btn">
                         <button>Return to Shopping</button>
                     </div>
                 </div>
@@ -50,25 +50,5 @@ export default class Account extends Component {
                 </div>
             </div>
         );
-        // return (
-        //     <div className="auth-page-wrapper">
-        //         <div
-        //             className="left-column" 
-        //             style={{
-        //                 backgroundImage: `url(${loginImg})`
-        //             }}
-        //         />
-        //                 {/* // style expects JS (1st {}) and an object (2nd {}) */}
-        //         <div className="right-column">
-        //             <Login
-        //                 handleSuccessfulAuth={this.handleSuccessfulAuth}
-        //                 handleUnsuccessfulAuth={this.handleUnsuccessfulAuth}
-        //             />
-
-        //         </div>
-
-
-        //     </div>
-        // )
     }
 }
