@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+@import './variables.scss';
 
 body {
-  background: #fffaf0;
+  background: $off-white;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: $text-font;
   letter-spacing: 2px;
 }
 
@@ -20,15 +20,15 @@ body {
 
 .app-container {
   margin: 5% auto;
-  width: 635px;
-  height: 430px;
+  width: 735px;
+  height: 530px;
   background: white;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
 
 
 .item-container .item-image img {
-  height: 430px;
+  height: 530px;
   width: 100%;
 }
 
@@ -53,11 +53,11 @@ body {
 .item-price {
   font-size: 25px;
   font-weight: 700;
-  color: #0b8a6d;
+  color: $medium-blue;
 }
 
 .checkout {
-  height: 430px;
+  height: 530px;
   background: #2f2c33;
   color: white;
 }
@@ -126,7 +126,7 @@ input[type=month]::-webkit-calendar-picker-indicator {
 }
 
 .checkout-btn {
-  background: linear-gradient(0deg, #019875, #029875);
+  background: linear-gradient(0deg, $light-blue, $medium-blue);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 5px;
