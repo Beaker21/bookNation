@@ -24,6 +24,7 @@ export default class Home extends Component {
                 <GenreButtons />
             </div>
         </div>
+
       </div>
     );
   }
