@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Popup from "reactjs-popup";
 
 export default class BookDetail extends Component {
     constructor(props){
@@ -7,6 +8,12 @@ export default class BookDetail extends Component {
         this.state={
 
         }
+
+        this.confirmationPopup = this.confirmationPopup.bind(this);
+    }
+
+    confirmationPopup(){
+
     }
 
     render() {
@@ -22,7 +29,9 @@ export default class BookDetail extends Component {
                     <h2>Author</h2>
                 </div>
                 <div classname="buy-book">
-                    <a href="#">Buy</a>
+                    <Popup onClick={} trigger={<button> Buy</button>} position="top center">
+                        <div>Popup content here !!</div>
+                    </Popup>
                 </div>
                 <div classname="book-cover">
                     <img src="#">Cover</img>
