@@ -101,13 +101,13 @@ export default class Login extends Component {
    render() {
     return (
 
-        <div class="form">
-            <ul class="tab-group">
-                <li class="tab active" onClick={this.showSignup}><a href="#signup">Sign Up</a></li>
-                <li class="tab" onClick={this.showLogin}><a href="#login">Log In</a></li>
+        <div className="form">
+            <ul className="tab-group">
+                <li className="tab active" onClick={this.showSignup}><a href="#signup">Sign Up</a></li>
+                <li className="tab" onClick={this.showLogin}><a href="#login">Log In</a></li>
             </ul>
       
-      <div class="tab-content">
+      <div className="tab-content">
         <div id="signup" style={{display: this.state.signup ? "grid" : "none"}}>   
           <h1>Sign Up for Free</h1>
 
@@ -119,9 +119,9 @@ export default class Login extends Component {
           
           {/* <form action="/" method="post"> */}
           
-          <div class="top-row">
+          <div className="top-row">
           
-            <div class="field-wrap">
+            <div className="field-wrap">
 
               <input 
                 type="text" 
@@ -134,7 +134,7 @@ export default class Login extends Component {
         
           </div>
 
-          <div class="field-wrap">
+          <div className="field-wrap">
           <input 
                 type="text" 
                 name="email"
@@ -144,7 +144,7 @@ export default class Login extends Component {
             />
           </div>
           
-          <div class="field-wrap">
+          <div className="field-wrap">
           <input 
                 type="text" 
                 name="password"
@@ -154,7 +154,7 @@ export default class Login extends Component {
             />
           </div>
           <p style={{display: this.state.verificationError ? "block" : "none"}}>Error Signing Up</p>
-          <button type="submit" class="button button-block">
+          <button type="submit" className="button button-block">
             Get Started 
           </button>
 
@@ -166,7 +166,7 @@ export default class Login extends Component {
           
             <form onSubmit={this.handleSubmit}>
           
-            <div class="field-wrap">
+            <div className="field-wrap">
 
                 <input 
                     type="email"
@@ -177,7 +177,7 @@ export default class Login extends Component {
                 />
             </div>
           
-            <div class="field-wrap">
+            <div className="field-wrap">
                 
                 <input 
                     type="password"
@@ -188,7 +188,7 @@ export default class Login extends Component {
                 />
             </div>
             <p style={{display: this.state.verificationError ? "block" : "none"}}>Incorrect Email or Password</p>          
-            <button class="button button-block">Log In</button>
+            <button className="button button-block">Log In</button>
           
           </form>
         </div>
