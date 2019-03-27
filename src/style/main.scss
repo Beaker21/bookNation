@@ -1,32 +1,11 @@
-
+@import './homepage.scss';
 @import './checkout.scss';
-
+@import "./auth.scss";
+@import './navbar.scss';
 @import "./grid.scss";
+@import "./variables.scss";
 
-html {
-    font-size: 62.5%; // 1rem is 10px
+body{
+
+    margin: 0;
 }
-
-
-
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
-
-.home-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 100px;
-
-   
-
-    
-}
-
-.home-middle {
-    margin-bottom: 50px;
-}
-

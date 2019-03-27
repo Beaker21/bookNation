@@ -12,10 +12,6 @@ import NavBar from "./navbar";
 import Auth from "./authentication/auth";
 import BookGrid from "./grid";
 import CheckoutPage from './checkout';
-import AddBookForm from './admin/add-book-form';
-
-
-
 
 export default class App extends Component {
   render() {
@@ -23,27 +19,20 @@ export default class App extends Component {
       <div className='app'>
 
 
-        <Home/>
-      
-
-        <Account />
-
-        <CheckoutPage />
-        <AddBookForm />
-
-
 
         <Router>
           <div>
           <NavBar />
            <Switch>   
-              <Route path="/" component={Home} />
+              <Route exact path="/" component={Home} />
               <Route path="/account" component={Account} />
               <Route path="/auth" component={Auth} />
+              <Route path="/checkout" component={CheckoutPage} />
+
             </Switch>
           </div>
         </Router>
-
+        <BookGrid />
       </div>
     );
   }

@@ -5,8 +5,23 @@ export default class BookGrid extends Component {
         super(props)
 
         this.state = {
-            books: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+            books: []
         }
+    }
+
+    componentDidMount() {
+        fetch ("https://book-nation.herokuapp.com/library", {
+            method: "GET",
+            headers: {
+                "accepts": "application/json",
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => {return response.json();})
+        .then(data => {this.setState({books: data});})
+        .catch(error => {
+            console.log("Fetch error" + error)
+        })
     }
 
     render() {
@@ -14,7 +29,11 @@ export default class BookGrid extends Component {
             <div className="grid-container">
                 {this.state.books.map((data) => (
                     <div className="book-data">
-                        {data}
+                        <div className="book-data-title">
+                            {data[1]}
+                        </div>
+                        
+                        <img src={data[5]}></img>
                     </div>
                 ))}
             </div>
