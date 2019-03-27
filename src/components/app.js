@@ -12,6 +12,7 @@ import NavBar from "./navbar";
 import Auth from "./authentication/auth";
 import BookGrid from "./grid";
 import CheckoutPage from './checkout';
+import Cart from './cart';
 
 
 
@@ -31,6 +32,7 @@ export default class App extends Component {
               <Route path="/account" component={Account} />
               <Route path="/auth" component={Auth} />
               <Route path="/checkout" component={CheckoutPage} />
+              <Route path="/cart" component={Cart} />
 
             </Switch>
           </div>

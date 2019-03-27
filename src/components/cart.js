@@ -1,27 +1,16 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-  <title>Book Nation</title>
-</head>
-
-<body>
-
 import React from 'react';
+
 const Cart  = () => {
     return(
 <div>
   <div className="container">
     <div className="header">
-      <h3 className="header-logo">Cart</h3>
+      <h3 className="header-logo">Store</h3>
       
       <div className="header-nav">
         <ul>
-          <li><a href="./">Home</a></li> 
-          <li><a href="./grid">Products</a></li>
+          <li><a href="#0">Home</a></li>
+          <li><a href="#0">Products</a></li>
           </ul>
       </div>
     </div>
@@ -45,10 +34,34 @@ const Cart  = () => {
 </div>
 )
 }
+
 export default Cart;
 
-  <div class="app-wrapper"></div>
-</body>
 
 
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
