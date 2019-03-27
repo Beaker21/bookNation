@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import GenreButtons from './genre-buttons';
+import SearchBar from './search-bar';
 
 export default class Home extends Component {
   render() {
@@ -14,12 +16,12 @@ export default class Home extends Component {
         </div>
         <div className='home-middle'>
             <div className='home-searchbar'>
-                <h1>Search bar</h1>
+                <SearchBar />
             </div>
         </div>
         <div className='home-bottom'>
             <div className='home-genre-buttons'>
-                <h3>5 Genre buttons</h3>
+                <GenreButtons />
             </div>
         </div>
       </div>
