@@ -20,8 +20,9 @@ class SearchBar extends Component {
           })
         });
       }
+
  getInfo() {
-    fetch(`http://localhost:5000/search/${this.state.title}`, {
+    fetch(`https://book-nation.herokuapp.com/search/${this.state.title}`, {
         method: 'GET',
         header: {
             "accepts": "application/json",
@@ -36,8 +37,6 @@ class SearchBar extends Component {
             books: data
         })
         
-        console.log(this.state.books);
-        
       })
     .catch(err => {console.log("Fetch Error" + err);})
   }
@@ -46,24 +45,29 @@ class SearchBar extends Component {
       title: this.search.value
     })
   }
+
   onSubmit(event) {
     event.preventDefault();
     this.getInfo()
   }
+
   render() {
     return (
-    <div>
-        <div className="error-msg">
-            { this.state.books !== null ? null : "Your search wasn't found. Please try again" }
-        </div>
+    <div className = 'search-bar-wrapper'>
         <form onSubmit={this.onSubmit}>
         
-        <input
-          placeholder="Search for..."
-          ref={input => this.search = input}
-          onChange={this.handleInputChange}
-        />
-        <button type='submit' value="submit" onChange={this.onSubmit}>Submit</button>
+        <div className = 'search'>
+          <input
+            placeholder="Search for..."
+            className="search-bar-input"
+            ref={input => this.search = input}
+            onChange={this.handleInputChange}
+          />
+          <button className="submit" type='submit' value="submit" onChange={this.onSubmit}>Submit</button>
+        </div>
+        <div className="render">
+            { this.state.books !== null ? this.state.books : "Your search wasn't found!" }
+        </div>
       </form>
     </div>
     )
