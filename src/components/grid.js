@@ -5,6 +5,7 @@ export default class BookGrid extends Component {
         super(props)
 
         this.state = {
+            genre: "",
             books: []
         }
     }
@@ -12,6 +13,9 @@ export default class BookGrid extends Component {
     render() {
         return(
             <div className="grid-container">
+                <div className="genre-title">
+                    {this.state.genre}
+                </div>
                 {this.state.books.map((data) => (
                     <div className="book-data">
                         {data}
