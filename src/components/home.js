@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchBar from './search'
 
 export default class Home extends Component {
   render() {
@@ -6,7 +7,7 @@ export default class Home extends Component {
       <div className='home-page'>
 
         <div className='home-searchbar'>
-          <h1>Search bar</h1>
+          <SearchBar />
         </div>
         <div className='home-genre-buttons'>
           <h3>5 Genre buttons</h3>
