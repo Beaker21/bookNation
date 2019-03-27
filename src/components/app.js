@@ -15,10 +15,15 @@ import Auth from './authentication/auth'
 import BookGrid from "./grid"
 
 
+import CheckoutPage from './checkout';
+
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
+
+        <CheckoutPage />
+
 
         <Router>
           <div>
