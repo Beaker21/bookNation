@@ -16,19 +16,48 @@
   }
 
   .navLinks{
-     a{
       text-decoration: none;
       font-family: $title-font;
       color: $medium-blue;
       padding: 0px 20px;
       text-decoration: underline transparent;
       transition: 0.5s ease-in-out;
+      display: flex;
+      text-align: center;
+
+      a{
+        text-decoration: none;
+        font-family: $title-font;
+        color: $medium-blue;
+        padding: 2px 20px;
+        text-decoration: underline transparent;
+        transition: 0.5s ease-in-out;
 
       &:hover{
         color: $dark-blue;
         text-decoration: underline $dark-blue;
-      }
      }
+    }
+    .language-toggle-btn {
+      background-color: $medium-blue;
+      width: 65px;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      padding: 2px 8px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: $title-font;
+      font-size: .9em;
+
+      &:hover{
+        background-color: $dark-blue;
+        text-decoration: none;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
   }
 }
-
