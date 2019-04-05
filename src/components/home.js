@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import BookGrid from "./grid";
 import SearchBar from './search'
-import GenreButtons from './genre-buttons';
+
+import logoMain from "../../static/assets/images/logo-main.png";
 
 
 export default class Home extends Component {
@@ -11,7 +12,7 @@ export default class Home extends Component {
         <div className='casa'>
           <div className='home-top'>
               <div className='home-logo'>
-                  <h2>BOOK NATION</h2>
+                <img className='photo-main' src={logoMain}/>
               </div>
           </div>
           <div className='home-middle'>
