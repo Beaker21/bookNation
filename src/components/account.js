@@ -45,6 +45,7 @@ export default class Account extends Component {
             <div className="account-page-wrapper">
                 { this.state.usertype == "admin" ? <AdminAccount /> : <div>
                 <div>
+
                         <div>
                             <h1>This is the Account Page</h1>
                         </div>
@@ -75,8 +76,7 @@ export default class Account extends Component {
                             <button>Return to Shopping</button>
                         </div>
                     </div>
-                </div>}
-                    
+
             </div>
         );
     }

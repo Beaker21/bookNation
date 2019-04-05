@@ -1,0 +1,12 @@
+.account-page-wrapper {
+    @include page-comp();
+
+    div {
+        font-family: $text-font;
+    }
+
+    button {
+        @include btn-styles();
+    }
+   
+}
