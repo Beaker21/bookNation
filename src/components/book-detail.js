@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Popup from "reactjs-popup";
 
+<div classname="buy-book">
+<Popup onClick={} trigger={<button> Buy</button>} position="top center">
+    <div>Popup content here !!</div>
+</Popup>
+</div>
+
 export default class BookDetail extends Component {
     constructor(props){
         super(props)

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import BookGrid from "./grid";
 import SearchBar from './search'
-import GenreButtons from './genre-buttons';
 
 
 
@@ -25,12 +24,6 @@ export default class Home extends Component {
             </div>
 
         </div>
-        <div className='home-bottom'>
-            <div className='home-genre-buttons'>
-                <GenreButtons />
-            </div>
-        </div>
-        <BookGrid />
       </div>
     );
   }

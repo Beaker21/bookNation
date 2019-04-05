@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 
+import GenreButtons from './genre-buttons'
+
 export default class BookGrid extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            books: []
+            books: [],
+            genre: "all"
         }
+
+        this.handleGenreChange = this.handleGenreChange.bind(this)
     }
 
     componentDidMount() {
@@ -24,18 +29,31 @@ export default class BookGrid extends Component {
         })
     }
 
+    handleGenreChange(genre) {
+        this.setState({
+            genre: genre
+        })
+    }
+
     render() {
         return(
-            <div className="grid-container">
-                {this.state.books.map((data) => (
-                    <div className="book-data">
-                        <div className="book-data-title">
-                            {data[1]}
-                        </div>
-                        
-                        <img src={data[5]}></img>
+            <div className = 'grid-wrapper'>
+                <div className='home-bottom'>
+                    <div className='home-genre-buttons'>
+                        <GenreButtons handleGenreChange={this.handleGenreChange} />
                     </div>
-                ))}
+                </div>
+                <div className="grid-container">
+                    {this.state.books.map((data) => (
+                        this.state.genre === "all" || this.state.genre === data[6] ? (<div className="book-data">
+                            <div className="book-data-title">
+                                {data[1]}
+                            </div>
+                            
+                            <img src={data[5]}></img>
+                        </div>) : null
+                    ))}
+                </div>
             </div>
         )
     }
