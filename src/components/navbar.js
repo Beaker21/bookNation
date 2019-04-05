@@ -12,7 +12,22 @@ export default class NavBar extends Component {
             language_toggle: true
         }
 
+
         this.toggle = this.toggle.bind(this)
+
+           
+      <div className='navbar'>
+            <div className="logo">
+                <img src={logoMain}/>
+            </div>
+            <div className="navLinks">
+                <NavLink exact to="/">Home</NavLink>
+                <NavLink to="/account">Account</NavLink>
+                <NavLink to="/login">login</NavLink>
+                <NavLink to="/cart">Cart</NavLink>
+                {Cookie.get("session") ? <NavLink to="/" onClick={() => Cookie.remove("session")}>Log Out</NavLink> : null}
+            </div>
+
 
     }
 

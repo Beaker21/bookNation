@@ -1,0 +1,11 @@
+.cart-container {
+    @include page-comp();
+
+    h3 {
+        font-family: $title-font;
+    }
+
+    .cart-btn {
+        @include btn-styles();
+    }
+}

@@ -1,16 +1,12 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./auth.scss";
+@import "./common.scss";
 @import './homepage.scss';
 @import './checkout.scss';
-@import "./auth.scss";
 @import './navbar.scss';
 @import "./grid.scss";
-@import "./variables.scss";
 @import "./search.scss";
+@import "./account.scss";
+@import "./cart.scss";
 
-body{
-
-}
-
-.home-middle {
-    margin-bottom: 50px;
-    margin: 0;
-}

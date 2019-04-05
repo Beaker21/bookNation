@@ -1,40 +1,16 @@
-
-
-
-$body-bg: #c1bdba;
-$form-bg: #13232f;
-$white: #ffffff;
-
-$main: #1ab188;
-$main-light: lighten($main,5%);
-$main-dark: darken($main,5%);
-
-$gray-light: #a0b3b0;
-$gray: #ddd;
-
-$thin: 300;
-$normal: 400;
-$bold: 600;
-$br: 4px;
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 html {
-	overflow-y: scroll; 
+    overflow-y: scroll; 
 }
-
-
 a {
   text-decoration:none;
-
   transition:.5s ease;
   &:hover {
     color:$main-dark;
   }
 }
-
 .form {
   background:rgba($form-bg,.9);
   padding: 40px;
@@ -43,7 +19,6 @@ a {
   border-radius:$br;
   box-shadow:0 4px 10px 4px rgba($form-bg,.3);
 }
-
 .tab-group {
   list-style:none;
   padding:0;
@@ -75,19 +50,15 @@ a {
     color:$white;
   }
 }
-
 .tab-content > div:last-child {
   display:none;
 }
-
-
 h1 {
   text-align:center;
   color:$white;
   font-weight:$thin;
   margin:0 0 40px;
 }
-
 label {
   position:absolute;
   transform:translateY(6px);
@@ -98,11 +69,10 @@ label {
   pointer-events: none;
   font-size:22px;
   .req {
-  	margin:2px;
-  	color:$main;
+    margin:2px;
+    color:$main;
   }
 }
-
 label.active {
   transform:translateY(50px);
   left:2px;
@@ -111,11 +81,9 @@ label.active {
     opacity:0;
   }
 }
-
 label.highlight {
-	color:$white;
+    color:$white;
 }
-
 input, textarea {
   font-size:22px;
   display:block;
@@ -129,23 +97,18 @@ input, textarea {
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
   &:focus {
-		outline:0;
-		border-color:$main;
+        outline:0;
+        border-color:$main;
   }
 }
-
 textarea {
   border:2px solid $gray-light;
   resize: vertical;
 }
-
 .field-wrap {
   position:relative;
   margin-bottom:40px;
 }
-
-
-
 .button {
   border:0;
   outline:none;
@@ -163,21 +126,17 @@ textarea {
     background:$main-dark;
   }
 }
-
 .button-block {
   display:block;
   width:100%;
 }
-
 .forgot {
   margin-top:-20px;
   text-align:right;
 }
-
 body{
     background-color: $off-white;
 }
-
 .auth-page{
     background-color: $off-white;
 }
