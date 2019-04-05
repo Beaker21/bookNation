@@ -26,19 +26,22 @@ export default class Login extends Component {
    }
 
    handleSubmit() {
+       event.preventDefault()
+
        if(this.state.signup) {
             fetch("https://book-nation.herokuapp.com/user/input", {
-                methods: "POST",
+                method: "POST",
                 headers: {
                     "Content-type": "application/json"
                 },
-                body: JSON.strigify({
+                body: JSON.stringify({
                     name: this.state.name,
                     password: this.state.password,
                     email: this.state.email,
                     user_type: "user"
                 })
             })
+            .then(response => response.json())
             .then(response => {
                 if (response === 'User Posted') {
                     Cookie.remove("session")
@@ -51,17 +54,19 @@ export default class Login extends Component {
                 }
             })
             .catch(error=> {
+                console.log("Error", error);
+                
                 this.setState({
                     errorText: "an error done happened dude"
                 })
             });
         } else {     
-            fetch("https://book-nation.herokuapp.com/user/verification", {
-                methods: "POST",
+            fetch("https://book-nation.herokuapp.com/users/verification", {
+                method: "POST",
                 headers: {
                     "Content-type": "application/json"
                 },
-                body: JSON.strigify({
+                body: JSON.stringify({
                     password: this.state.password,
                     email: this.state.email
                 })
@@ -146,7 +151,7 @@ export default class Login extends Component {
           
           <div className="field-wrap">
           <input 
-                type="text" 
+                type="password" 
                 name="password"
                 placeholder="set password"
                 value={this.state.password}
