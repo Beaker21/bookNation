@@ -1,6 +1,7 @@
+@import "./variables.scss";
 .home-page {
-  background-image: url(../../static/assets/images/blue-door-books.jpg);
-  // background-color: #;
+  //background-image: url(../../static/assets/images/blue-door-books.jpg);
+  background-color: $off-white;
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -9,11 +10,22 @@
   margin: 0;
   border-top: 10px solid $dark-blue;
 }
-
 .home-searchbar h1{
   margin: 0;
 }
-
-button {
-  @include btn-styles();
+.home-logo {
+   text-align: center;
+}
+// .home-genre-buttons{
+//   display: flexbox;
+//   flex-direction: row 1fr;
+//   justify-content: center;
+//   align-items: center;
+// }
+.casa {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
 }
