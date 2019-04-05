@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import BookGrid from "./grid";
 import SearchBar from './search'
+
 
 
 
@@ -22,7 +24,6 @@ export default class Home extends Component {
             </div>
 
         </div>
-
       </div>
     );
   }
