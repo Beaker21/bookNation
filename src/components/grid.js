@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import GenreButtons from './genre-buttons'
 
 export default class BookGrid extends Component {
