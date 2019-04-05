@@ -21,7 +21,7 @@ export default class Account extends Component {
         let email = Cookie.get("session")
 
         if (email) {
-            fetch (`http://127.0.0.1:5000/single/email/user/${email}`, {
+            fetch (`https://book-nation.herokuapp.com//single/email/user/${email}`, {
             method: 'GET',
             headers: {
                 "accepts": "application/json",
