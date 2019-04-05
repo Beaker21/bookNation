@@ -16,16 +16,15 @@
 .home-logo {
    text-align: center;
 }
-// .home-genre-buttons{
-//   display: flexbox;
-//   flex-direction: row 1fr;
-//   justify-content: center;
-//   align-items: center;
-// }
+
+.photo-main{
+  height: 200px;
+  width: 300px;
+}
 .casa {
   display: grid;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 20vh;
+  padding-top: 5vh;
 }
