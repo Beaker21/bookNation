@@ -1,0 +1,7 @@
+.cart-container {
+    @include page-comp();
+
+    h3 {
+        font-family: $title-font;
+    }
+}

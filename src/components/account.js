@@ -13,9 +13,7 @@ export default class Account extends Component {
             <div className="account-page-wrapper">
 
                 <div>
-                    <div>
-                        <h1>This is the Account Page</h1>
-                    </div>
+                    <h1>This is the Account Page</h1>
                 </div>
                 <div className="account-details-wrapper">
                     <div>
@@ -43,11 +41,11 @@ export default class Account extends Component {
                         <button>Return to Shopping</button>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <br></br>
                     <br></br>
-                    <AdminAccount />
-                </div>
+                    <AdminAccount /> */}
+                {/* </div> */}
             </div>
         );
     }
