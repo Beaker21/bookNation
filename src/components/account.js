@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AdminAccount from "./admin-account";
+import Cookie from "js-cookie";
 
 
 
@@ -76,7 +77,8 @@ export default class Account extends Component {
                             <button>Return to Shopping</button>
                         </div>
                     </div>
-
+                </div>
+                }
             </div>
         );
     }
