@@ -17,7 +17,7 @@ const NavBar = () => {
                 <NavLink to="/account">Account</NavLink>
                 <NavLink to="/login">login</NavLink>
                 <NavLink to="/cart">Cart</NavLink>
-                <NavLink to="/" onClick={() => Cookie.remove("session")}>Log Out</NavLink>
+                {Cookie.get("session") ? <NavLink to="/" onClick={() => Cookie.remove("session")}>Log Out</NavLink> : null}
             </div>
 
         </div>
