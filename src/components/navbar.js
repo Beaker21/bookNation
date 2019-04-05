@@ -14,21 +14,6 @@ export default class NavBar extends Component {
 
 
         this.toggle = this.toggle.bind(this)
-
-           
-      <div className='navbar'>
-            <div className="logo">
-                <img src={logoMain}/>
-            </div>
-            <div className="navLinks">
-                <NavLink exact to="/">Home</NavLink>
-                <NavLink to="/account">Account</NavLink>
-                <NavLink to="/login">login</NavLink>
-                <NavLink to="/cart">Cart</NavLink>
-                {Cookie.get("session") ? <NavLink to="/" onClick={() => Cookie.remove("session")}>Log Out</NavLink> : null}
-            </div>
-
-
     }
 
     componentDidMount() {
@@ -65,13 +50,12 @@ export default class NavBar extends Component {
                 <div className="navLinks">
                     <NavLink exact to="/">Home</NavLink>
                     <NavLink to="/account">Account</NavLink>
-                    <NavLink to="/auth">Auth</NavLink>
+                    <NavLink to="/login">Login</NavLink>
                     <NavLink to="/cart">Cart</NavLink>
-                    {/* <div>
-                        <p>Language:</p>
-                    </div> */}
+                    {Cookie.get("session") ? <NavLink to="/" onClick={() => Cookie.remove("session")}>Log Out</NavLink> : null}
+                 
                     <div className="language-button-wrapper">
-                        <button className="language-toggle-btn" onClick={this.toggle}>{this.state.language_toggle ? 'English' : 'Español'}</button>
+                        <button className="language-toggle-btn" onClick={this.toggle}>{this.state.language_toggle ? 'Español' : 'English'}</button>
                     </div>
                 </div>
             </div>

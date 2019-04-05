@@ -4,7 +4,7 @@ import Cookie from 'js-cookie';
 
 
 export default class Cart extends Component {
-  constructor() {
+  constructor(props) {
     super(props);
 
     this.state = {
