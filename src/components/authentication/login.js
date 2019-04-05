@@ -61,7 +61,7 @@ export default class Login extends Component {
                 })
             });
         } else {     
-            fetch("http://127.0.0.1:5000/users/verification", {
+            fetch("https://book-nation.herokuapp.com//users/verification", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"
