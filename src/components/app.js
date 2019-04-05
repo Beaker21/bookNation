@@ -10,7 +10,7 @@ import Account from "./account";
 import Home from "./home";
 import NavBar from "./navbar";
 import Auth from "./authentication/auth";
-import BookGrid from "./grid";
+
 import CheckoutPage from './checkout';
 import Cart from './cart';
 
@@ -34,7 +34,7 @@ export default class App extends Component {
             </Switch>
           </div>
         </Router>
-        <BookGrid />
+        
       </div>
     );
   }
