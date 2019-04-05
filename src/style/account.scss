@@ -1,12 +1,41 @@
 .account-page-wrapper {
     @include page-comp();
+    padding: 0px 300px;
+    justify-content: space-between;
+    height: 50vh;
+    font-family: $text-font;
 
-    div {
-        font-family: $text-font;
+    h1, h2 {
+        font-family: $title-font;
+        color: $dark-blue;
+    }
+
+    .account-details-wrapper {
+        display: grid;
+        grid-gap: 10px;
+
+        .account-details {
+            background-color: $light-blue;
+            border-radius: 1px;
+            padding: 5px;
+            font-weight: 900;
+            color: $dark-blue;
+        }
+
+        .order-history-wrapper {
+            border: 3px solid $light-blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 300px;
+            padding: 10px;
+        }
     }
 
     button {
         @include btn-styles();
+        height: 20px;
+        margin: 1px;
     }
    
 }

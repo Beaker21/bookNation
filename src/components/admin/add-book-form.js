@@ -178,7 +178,6 @@ export default class PortfolioForm extends Component {
             <DropzoneComponent
               ref={this.coverRef}
               config={this.componentConfig()}
-              djsConfig={this.djsConfig()}
               eventHandlers={this.handleCoverDrop()}
             />
           </div>
