@@ -15,6 +15,8 @@ export default class Account extends Component {
         this.handleAccountData = this.handleAccountData.bind(this)  
     }
 
+
+
     handleAccountData() {
         let email = Cookie.get("session")
 
@@ -33,6 +35,7 @@ export default class Account extends Component {
         }
 
     }
+
     
 
     componentDidMount() {
@@ -71,7 +74,7 @@ export default class Account extends Component {
                             </div>
                         </div>
                         <div className="btn">
-                            <button>Update Account</button>
+                            <button onClick={this.handleUpdate}>Update Account</button>
                         </div>
                         <div className="btn">
                             <button>Return to Shopping</button>
