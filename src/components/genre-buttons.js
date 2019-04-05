@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from 'axios';
-import GenreItem from './genre-items';
 
 export default class GenreButtons extends Component {
   constructor() {
@@ -59,22 +58,21 @@ export default class GenreButtons extends Component {
 
     return (
       <div className="genre-items-wrapper">
-        <button className="btn" onClick={() => this.handleFilter("Fantasy")}>
+        <button className="btn" onClick={() => this.props.handleGenreChange("Fantasy")}>
           Fantasy
         </button>
-        <button className="btn" onClick={() => this.handleFilter("Historical Fiction")}>
+        <button className="btn" onClick={() => this.props.handleGenreChange("Historical Fiction")}>
           Historical Fiction
         </button>
-        <button className="btn" onClick={() => this.handleFilter("personal development")}>
+        <button className="btn" onClick={() => this.props.handleGenreChange("personal development")}>
           Personal Development
         </button>
-        <button className="btn" onClick={() => this.handleFilter("Romance")}>
+        <button className="btn" onClick={() => this.props.handleGenreChange("Romance")}>
           Romance
         </button>
-        <button className="btn" onClick={() => this.handleFilter("Science fiction")}>
+        <button className="btn" onClick={() => this.props.handleGenreChange("Science fiction")}>
           Science Fiction
         </button>
-        {this.getGenreItems()}
       </div>
     );
   }
