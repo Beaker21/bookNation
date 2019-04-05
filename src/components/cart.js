@@ -14,8 +14,8 @@ const Cart  = () => {
               (Products go here)
           </ul>
           <div className="cart-buttons">
-            <a href="#0" className="button empty-cart-btn">Empty</a>
-            <a href="#0" className="button cart-checkout">Checkout - <span className="total-price">$0</span></a>
+            <a href="#0" className="cart-btn empty-cart-btn">Empty</a>
+            <a href="#0" className="cart-btn cart-checkout">Checkout - <span className="total-price">$0</span></a>
           </div>
         </div>
       </div>
