@@ -15,6 +15,8 @@ export default class Account extends Component {
         this.handleAccountData = this.handleAccountData.bind(this)  
     }
 
+
+
     handleAccountData() {
         let email = Cookie.get("session")
 
@@ -33,6 +35,7 @@ export default class Account extends Component {
         }
 
     }
+
     
 
     componentDidMount() {
@@ -46,20 +49,17 @@ export default class Account extends Component {
             <div className="account-page-wrapper">
                 { this.state.usertype == "admin" ? <AdminAccount /> : <div>
                 <div>
-
-                        <div>
-                            <h1>This is the Account Page</h1>
-                        </div>
+                        <h1>Account Information</h1>
                     </div>
                     <div className="account-details-wrapper">
-                        <div>
+                        <div className="account-details">
                             Name: { this.state.userdata[1] }
                         </div>
-                        <div>
+                        <div className="account-details">
                             Email: { this.state.userdata[2] }
                         </div>
                         <div className="order-history-wrapper">
-                            Order History:
+                            <h2>Order History:</h2>
                             <div>
                                 Title:
                             </div>
@@ -71,7 +71,7 @@ export default class Account extends Component {
                             </div>
                         </div>
                         <div className="btn">
-                            <button>Update Account</button>
+                            <button onClick={this.handleUpdate}>Update Account</button>
                         </div>
                         <div className="btn">
                             <button>Return to Shopping</button>
