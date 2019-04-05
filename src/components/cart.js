@@ -1,25 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Cart  = () => {
-  return(
-    <div className="cart-container">
-      <h3 className="header-logo">Store</h3>
-          
-      <div className="shopping-cart">
+import logoMain from '../../static/assets/images/logo-main.png';
+import { faTrashAlt } from '@fortawesome/free-regular-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+export default class Cart extends Component {
+  render() {
+    return (
+      <div className="cart-container">
+        <div className="header-logo">
+          <img src={logoMain}/>
+        </div>
+            
+        <div className="shopping-cart">
           <div className="shopping-cart-head">
-            <h4>Product(s) in Cart</h4>
-            <span className="product-quantity">0</span> 
+            <h4>My Cart</h4>
           </div>
-          <ul className="shopping-cart-list">
+
+          <div className="shopping-cart-list">
+            <ul>
               (Products go here)
-          </ul>
+            </ul>
+          </div>
+
+          <div className="cart-total">
+            <span>Subtotal: $0</span>
+          </div>
+
           <div className="cart-buttons">
-            <a href="#0" className="cart-btn empty-cart-btn">Empty</a>
-            <a href="#0" className="cart-btn cart-checkout">Checkout - <span className="total-price">$0</span></a>
+            <a href="#0" className="empty-cart-btn">
+              <FontAwesomeIcon icon={faTrashAlt} />
+            </a>
+    
+            <a href="#0" className="cart-checkout-btn">
+              <FontAwesomeIcon icon={faShoppingCart} />
+            </a>
           </div>
         </div>
       </div>
-  )
+    )
+  }
 }
-
-export default Cart;

@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTrashAlt } from '@fortawesome/free-regular-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faTrashAlt, faShoppingCart)
 
 import {
   BrowserRouter as Router,
