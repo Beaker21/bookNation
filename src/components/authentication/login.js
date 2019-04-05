@@ -61,7 +61,7 @@ export default class Login extends Component {
                 })
             });
         } else {     
-            fetch("https://book-nation.herokuapp.com/users/verification", {
+            fetch("http://127.0.0.1:5000/users/verification", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"
@@ -71,7 +71,10 @@ export default class Login extends Component {
                     email: this.state.email
                 })
             })
+            .then(response => response.json())
             .then(response => {
+                console.log(response);
+                
                 if (response === 'User Verified') {
                     Cookie.remove("session")
                     Cookie.set("session", this.state.email)
