@@ -14,6 +14,7 @@ import Auth from "./authentication/auth";
 import CheckoutPage from './checkout';
 import Cart from './cart';
 
+
 export default class App extends Component {
   render() {
     return (
